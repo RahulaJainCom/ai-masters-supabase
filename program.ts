@@ -1,0 +1,21 @@
+export type ProgramRow = {
+  school_name: string;
+  program_name: string;
+  slug: string;
+  degree_type: string;
+  program_scope: "exact_ai" | "applied_ai" | "ai_related" | "management_ai";
+  modality: string;
+  total_credits: number | null;
+  tuition_total_usd: number | null;
+  tuition_per_credit_usd: number | null;
+  duration: string | null;
+  gre_policy: string | null;
+  official_url: string;
+  source_type: string;
+  source_url: string;
+  last_verified_at: string;
+  verification_notes: string | null;
+  confidence: "high" | "medium" | "low";
+  editorial_rank_score: number;
+  editorial_rank: number;
+};
